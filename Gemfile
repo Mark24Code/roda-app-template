@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+gem "roda"
 gem "sinatra"
 gem "sinatra-contrib"
 gem "sinatra-cors"
