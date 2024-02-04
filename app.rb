@@ -21,8 +21,6 @@ class App < Roda
   # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/Json.html
   plugin :json
 
-  # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/MultiRoute.html
-  plugin :multi_route
   # # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/HashBranchViewSubdir.html
   # plugin :hash_branch_view_subdir
 
@@ -57,8 +55,25 @@ class App < Roda
   # # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/RouteCsrf.html
   # plugin :route_csrf
 
+  # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/HashBranches.html
+  plugin :hash_branches
+  # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/HashPaths.html
+  plugin :hash_paths
+
+  Dir["./app/routes/*.middlewares.rb"].each do |mod|
+    require mod
+  end
+
+  Dir["./app/routes/*.models.rb"].each do |mod|
+    require mod
+  end
+
+  Dir["./app/routes/*.route.rb"].each do |mod|
+    require mod
+  end
 
   route do |r|
     r.public
+    r.hash_branches
   end
 end

@@ -7,6 +7,9 @@ gem "rack"
 gem "rackup"
 gem "rake"
 gem "puma"
+gem "sequel"
+gem "pg"
+gem "tilt"
 
 group :development do
   gem "rerun"

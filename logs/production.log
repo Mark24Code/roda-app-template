@@ -1,0 +1,6 @@
+I, [2024-02-04T15:43:31.364461 #39606]  INFO -- : (0.000179s) SET standard_conforming_strings = ON
+I, [2024-02-04T15:43:31.364691 #39606]  INFO -- : (0.000195s) SET client_min_messages = 'WARNING'
+I, [2024-02-04T15:43:31.364894 #39606]  INFO -- : (0.000194s) SET DateStyle = 'ISO'
+I, [2024-02-04T15:44:33.305031 #39784]  INFO -- : (0.000245s) SET standard_conforming_strings = ON
+I, [2024-02-04T15:44:33.305224 #39784]  INFO -- : (0.000167s) SET client_min_messages = 'WARNING'
+I, [2024-02-04T15:44:33.305448 #39784]  INFO -- : (0.000214s) SET DateStyle = 'ISO'

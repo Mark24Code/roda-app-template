@@ -1,11 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bigdecimal (3.1.6)
     ffi (1.16.3)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     nio4r (2.7.0)
+    pg (1.5.4)
     puma (6.4.2)
       nio4r (~> 2.0)
     rack (3.0.9)
@@ -20,6 +22,9 @@ GEM
       listen (~> 3.0)
     roda (3.76.0)
       rack
+    sequel (5.77.0)
+      bigdecimal
+    tilt (2.3.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -27,12 +32,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pg
   puma
   rack
   rackup
   rake
   rerun
   roda
+  sequel
+  tilt
 
 BUNDLED WITH
    2.5.5
