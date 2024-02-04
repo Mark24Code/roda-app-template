@@ -3,16 +3,10 @@
 source "https://rubygems.org"
 
 gem "roda"
-gem "sinatra"
-gem "sinatra-contrib"
-gem "sinatra-cors"
-gem "rake"
 gem "rack"
+gem "rackup"
+gem "rake"
 gem "puma"
-gem "minitest"
-gem "sequel"
-gem "pg"
-gem "jwt"
 
 group :development do
   gem "rerun"

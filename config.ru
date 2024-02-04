@@ -1,7 +1,3 @@
-# require './config/boot'
-## load setting、logger、database
-# Boot.prepare
+require './app'
 
-require './app/app'
-
-run App
+run App.freeze.app
