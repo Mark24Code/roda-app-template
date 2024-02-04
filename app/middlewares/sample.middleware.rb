@@ -1,4 +1,4 @@
-class Sample < Roda
+class SampleMiddleware < Roda
   # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/Middleware.html
   plugin :middleware, {:next_if_not_found => true}
 

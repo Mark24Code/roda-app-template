@@ -1,2 +1,4 @@
-class Sample < Sequel::Model
+require 'sequel'
+
+class User < Sequel::Model
 end

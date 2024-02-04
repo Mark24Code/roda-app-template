@@ -60,11 +60,11 @@ class App < Roda
   # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/HashPaths.html
   plugin :hash_paths
 
-  Dir["./app/routes/*.middlewares.rb"].each do |mod|
+  Dir["./app/middlewares/*.middleware.rb"].each do |mod|
     require mod
   end
 
-  Dir["./app/routes/*.models.rb"].each do |mod|
+  Dir["./app/models/*.model.rb"].each do |mod|
     require mod
   end
 
