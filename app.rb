@@ -27,7 +27,7 @@ class App < Roda
   # plugin :hash_branch_view_subdir
 
   # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/Public.html
-  plugin :public, root: 'public'
+  plugin :public
 
   # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/Render.html
   plugin :render
@@ -57,4 +57,8 @@ class App < Roda
   # # https://roda.jeremyevans.net/rdoc/classes/Roda/RodaPlugins/RouteCsrf.html
   # plugin :route_csrf
 
+
+  route do |r|
+    r.public
+  end
 end
