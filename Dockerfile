@@ -14,6 +14,6 @@ COPY . .
 
 RUN bundle install
 
-CMD ["rackup","-p","4567","-o", "0.0.0.0"]
+CMD ["rackup","-p","9292","-o", "0.0.0.0"]
 
-EXPOSE 4567
+EXPOSE 9292
